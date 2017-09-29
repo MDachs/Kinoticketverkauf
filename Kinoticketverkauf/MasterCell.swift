@@ -12,19 +12,18 @@ class MasterCell: UITableViewCell {
 
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet private weak var movieImage: UIImage!
+    @IBOutlet weak var movieImage: UIImageView!
     
-    var imageName: String? {
+    
+    var imageName: String = "" {
         didSet{
-            if let imageName = imageName  {
-                movieImage = UIImage(named: imageName)
-            }
+                movieImage.image = UIImage(named: imageName)
         }
     }
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        movieImage.image = #imageLiteral(resourceName: "default")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

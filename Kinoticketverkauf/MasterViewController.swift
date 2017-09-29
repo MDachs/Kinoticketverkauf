@@ -15,9 +15,9 @@ class MasterViewController: UITableViewController {
     var movies =  [Movie]()
     
     func createMovies() {
-        movies.append(Movie(title: "Cars 3 - Evolution", subtitle: "Animations- & Zeichentrickfilm", imageName: "carsImg"))
+        movies.append(Movie(title: "Cars 3 - Evolution", subtitle: "Animations- & Zeichentrickfilm", imageName: "carsImg.jpg"))
         movies.append(Movie(title: "Es", subtitle: "Horror/Thriller", imageName: "esImg"))
-        movies.append(Movie(title: "Kingsman - The Golden Circle", subtitle: "Komödie/Actionkomödie", imageName: "kingsman"))
+        movies.append(Movie(title: "Kingsman - The Golden Circle", subtitle: "Komödie/Actionkomödie", imageName: "kingsman.jgp"))
         movies.append(Movie(title: "Barry Seal - Only in America", subtitle: "Drama/Actionfilm", imageName: "BarrySeal"))
         movies.append(Movie(title: "Ich - einfach unverbesserlich 3", subtitle: "Trickfilm/Komödie", imageName: "ichUnfer"))
     }
