@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB04E721F7E502500C5CC4E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB04E711F7E502500C5CC4E /* Movie.swift */; };
+		0BB04E741F7E56AB00C5CC4E /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB04E731F7E56AB00C5CC4E /* MasterCell.swift */; };
 		0BBB51E21F7BA1EA00B955C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB51E11F7BA1EA00B955C7 /* AppDelegate.swift */; };
 		0BBB51E41F7BA1EA00B955C7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB51E31F7BA1EA00B955C7 /* MasterViewController.swift */; };
 		0BBB51E61F7BA1EA00B955C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB51E51F7BA1EA00B955C7 /* DetailViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB04E711F7E502500C5CC4E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0BB04E731F7E56AB00C5CC4E /* MasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCell.swift; sourceTree = "<group>"; };
 		0BBB51DE1F7BA1EA00B955C7 /* Kinoticketverkauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinoticketverkauf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBB51E11F7BA1EA00B955C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BBB51E31F7BA1EA00B955C7 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 			children = (
 				0BBB51E11F7BA1EA00B955C7 /* AppDelegate.swift */,
 				0BBB51E31F7BA1EA00B955C7 /* MasterViewController.swift */,
+				0BB04E731F7E56AB00C5CC4E /* MasterCell.swift */,
 				0BBB51E51F7BA1EA00B955C7 /* DetailViewController.swift */,
+				0BB04E711F7E502500C5CC4E /* Movie.swift */,
 				0BBB51E71F7BA1EA00B955C7 /* Main.storyboard */,
 				0BBB51EA1F7BA1EA00B955C7 /* Assets.xcassets */,
 				0BBB51EC1F7BA1EA00B955C7 /* LaunchScreen.storyboard */,
@@ -203,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBB51E61F7BA1EA00B955C7 /* DetailViewController.swift in Sources */,
+				0BB04E721F7E502500C5CC4E /* Movie.swift in Sources */,
 				0BBB51E41F7BA1EA00B955C7 /* MasterViewController.swift in Sources */,
 				0BBB51E21F7BA1EA00B955C7 /* AppDelegate.swift in Sources */,
+				0BB04E741F7E56AB00C5CC4E /* MasterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRP4693W8U;
 				INFOPLIST_FILE = Kinoticketverkauf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.dachs.Kinoticketverkauf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRP4693W8U;
 				INFOPLIST_FILE = Kinoticketverkauf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.dachs.Kinoticketverkauf;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,8 +12,15 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
-
-
+    var movies =  [Movie]()
+    
+    func createMovies() {
+        movies.append(Movie(title: "Cars 3 - Evolution", subtitle: "Animations- & Zeichentrickfilm", imageName: "carsImg"))
+        movies.append(Movie(title: "Es", subtitle: "Horror/Thriller", imageName: "esImg"))
+        movies.append(Movie(title: "Kingsman - The Golden Circle", subtitle: "Komödie/Actionkomödie", imageName: "kingsman"))
+        movies.append(Movie(title: "Barry Seal - Only in America", subtitle: "Drama/Actionfilm", imageName: "BarrySeal"))
+        movies.append(Movie(title: "Ich - einfach unverbesserlich 3", subtitle: "Trickfilm/Komödie", imageName: "ichUnfer"))
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,16 +32,12 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        createMovies()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @objc
@@ -65,14 +68,16 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return movies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MasterCell", for: indexPath) as! MasterCell
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let movie = movies[indexPath.row]
+        cell.titleLabel.text = movie.title
+        cell.subtitleLabel.text = movie.subtitle
+        cell.imageName = movie.imageName
         return cell
     }
 
