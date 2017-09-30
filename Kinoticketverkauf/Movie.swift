@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Seating {
+    case occupied
+    case empty
+}
+
 struct Movie {
     let title: String
     let subtitle: String
